@@ -1,0 +1,23 @@
+[[[[[[[[[[References Introdoction:
+
+Khorsandi, H., Taheri, M., & Naghashzadegan, M. (2020). Application of artificial neural network for prediction of air quality index in Tehran. Journal of Environmental Health Science and Engineering, 18(2), 825-835. DOI: 10.1007/s40201-020-00517-3
+
+Chen, Y., Fan, H., & Shao, J. (2020). Application of machine learning techniques for the prediction of air quality index in Tehran, Iran. Environmental Science and Pollution Research, 27(14), 16669-16679. DOI: 10.1007/s11356-020-07884-1
+
+Mahsa Khosravi, Milad Taghiyareh, Ahmad Makkiabadi, Ali Akbar Ebrahimi, Sadegh Rostami, Using data mining and machine learning methods to predict air quality indices in Tehran, Iran, Environmental Science and Pollution Research, 27, 34, 43457-43471, 2020. DOI: 10.1007/s11356-020-10314-1
+
+Najafabadi, M. S., Fattahi, M., & Khorasani, N. (2019). Application of machine learning methods in air pollution prediction in Tehran, Iran. Science of the Total Environment, 688, 360-371. DOI: 10.1016/j.scitotenv.2019.06.408
+
+Zare, M., & Alimohammadi, M. (2020). Predicting air]]]]]]]]]]]
+
+
+
+
+
+
+
+Weather :
+https://www.visualcrossing.com/weather/weather-data-services/tehran?v=api#
+
+Quality : 
+https://airnow.tehran.ir/home/AQIArchive.aspx

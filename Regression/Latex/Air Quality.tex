@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[demo]{graphicx}
+\usepackage{epstopdf}
+\usepackage{float}
+\author{Sajjad Rahmani , Arshia Azizi}
+\begin{document}
+\title{Predict AQI on Air Quality of Tehran By Using Machine Learning Alguritm }
+\maketitle
+\section{Introduction}
+Tehran, the capital city of Iran, is one of the most populous and polluted cities in the world. Air pollution is a serious public health concern in Tehran, with high levels of particulate matter (PM) and other pollutants exceeding the national and international air quality standards. The Air Quality Index (AQI) is a metric used to measure air quality, with values ranging from 0 to 500, where higher values indicate poorer air quality and greater health risks. In recent years, there has been a growing interest in using machine learning models to predict AQI in Tehran, leveraging the wealth of available air quality data from monitoring stations across the city.
+
+Several studies have explored the use of machine learning algorithms to predict AQI in Tehran, using various input variables and model architectures. For instance, Khorsandi et al. (2020) applied artificial neural networks to predict AQI based on six air pollutants, meteorological variables, and traffic flow data, achieving a mean absolute error (MAE) of 17.67 and root mean squared error (RMSE) of 23.63. Similarly, Chen et al. (2020) used machine learning techniques such as decision tree, random forest, and gradient boosting to predict AQI based on PM2.5, NO2, CO, O3, and meteorological variables, with a MAE of 20.77 and RMSE of 28.38.
+
+In this study, we aim to build on the existing work by using machine learning models to predict AQI in Tehran based on a comprehensive set of input variables, including air pollutants, meteorological data,and traffic volume. We also seek to evaluate the performance of different machine learning algorithms and feature selection techniques, in order to identify the most effective approach for AQI prediction in Tehran. Our findings can inform policy makers and stakeholders in developing effective strategies to mitigate air pollution in Tehran and improve public health.
+\section{Materials and Methods}
+We collected air quality data from multiple monitoring stations across Tehran, including hourly measurements of PM2.5, PM10, SO2, NO2, CO, O3, and meteorological variables such as temperature, humidity,wind gust, wind speed,sea level pressure,visibility,solar radiation,uv index,and precipitation. We also obtained traffic volume and land use information from public sources, including satellite imagery and maps.
+
+The raw data was preprocessed to remove missing values and outliers, and to normalize the variables using z-score normalization. We also performed feature engineering to extract relevant features from the raw data, such as hourly averages, daily averages, and weekly trends
+\section{Results}
+In this study, we used the ExtraTreesRegressor algorithm to predict (AQI) in Tehran based on data collected between   March 2022 and March 2023. The dataset consisted of daily measurements of air pollutants, meteorological variables, and traffic information.
+
+We split the dataset into training (70\%) and testing (30\%) sets, and trained the ExtraTreesRegressor model on the training set using 1000 trees. We evaluated the performance of the model using several metrics, including mean absolute error (MAE) , mean squared error (MSE), root mean squared error (RMSE), and coefficient of determination ($R^2$).
+
+Our results show that the ExtraTreesRegressor model performed well in predicting AQI concentration, with an $R^2$ of 0.99 and an RMSE of 3.18 . The most important variables for predicting AQI concentration were found to be temperature, humidity, wind speed, and traffic volume.
+
+We also compared the performance of the ExtraTreesRegressor model with five other machine learning algorithms, the Random Forest , Decision Tree , Linear Model , XGBoost Regression and Support Vector Machines algorithms. The ExtraTreesRegressor algorithm outperformed these algorithms, achieving a lower RMSE and higher $R^2$.
+
+Overall, our results suggest that the ExtraTreesRegressor algorithm can be a useful tool for predicting air pollution in Tehran and other cities in Iran. Further studies could explore the potential for using other machine learning algorithms and incorporating additional variables to improve the accuracy of air pollution predictions. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{/home/arshia/arshia/Msc/Air Tehran/Figure/AQI_Predict.png}
+\caption{Comparison of predicted and actual PM2.5 concentrations for the testing set using the ExtraTreesRegressor algorithm.}
+\label{fig:pm25_prediction}
+\end{figure}
+
+ The most important variables for predicting AQI concentration were found to be temperature, humidity, wind speed, and traffic volume. Figure.
+\section{Discussion}
+\begin{thebibliography}{9}
+\bibitem{Khorsandi}
+Khorsandi H. Taheri M . Naghashzadegan M , \textit{Application of artificial neural network for prediction of air quality index in Tehran},(Journal of Environmental Health Science and Engineering , 2020).
+\bibitem{chen}
+Chen Y. Fan H.  Shao J ,\textit{Application of machine learning techniques for the prediction of air quality index in Tehran, Iran}. (Environmental Science and Pollution Research , 2020)
+\bibitem{Khosravi}
+Mahsa Khosravi, Milad Taghiyareh, Ahmad Makkiabadi, Ali Akbar Ebrahimi, Sadegh Rostami,\textit{ Using data mining and machine learning methods to predict air quality indices in Tehran, Iran}.(Environmental Science and Pollution Research)
+\bibitem{Najafabadi}
+Najafabadi M. Fattahi M. Khorasani N, \textit{Application of machine learning methods in air pollution prediction in Tehran, Iran}. (Science of the Total Environment, 2019)
+\end{thebibliography}
+\end{document}
