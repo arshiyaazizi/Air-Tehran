@@ -20,7 +20,7 @@ import array
 import statsmodels.formula.api as sm
 number = np.arange(1, 155, dtype=int)
 data = pd.read_excel(
-    r"/home/arshia/arshia/Msc/Air Tehran/Orginal Air Quality Tehran.xlsx")
+    r"Orginal Air Quality Tehran.xlsx")
 # data['Time'] = pd.to_datetime(data['Time'].astype(
 #     str))
 data.drop('Time', inplace=True, axis=1)
